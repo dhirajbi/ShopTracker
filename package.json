@@ -1,0 +1,29 @@
+{
+  "name": "shoptracker-mern",
+  "version": "1.0.0",
+  "description": "MERN Stack Application for Shop Inventory Tracking",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd Backend && npm run dev",
+    "client": "cd stock-track-live && npm run dev",
+    "build": "cd stock-track-live && npm run build",
+    "start": "cd Backend && npm start",
+    "install-all": "npm install && cd Backend && npm install && cd ../stock-track-live && npm install",
+    "seed": "cd Backend && npm run seed"
+  },
+  "keywords": [
+    "mern",
+    "mongodb",
+    "express",
+    "react",
+    "nodejs",
+    "inventory",
+    "tracking"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
